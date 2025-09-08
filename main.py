@@ -50,5 +50,6 @@ for row in new_df.values:
   cursor.execute("INSERT INTO recipes VALUES(?,?,?,?,?,?,?,?)", row)
 
 cursor.execute("SELECT * FROM recipes")
-cursor.fetchall()
+#retriving 10 recipes
+cursor.fetchmany(10)
 
