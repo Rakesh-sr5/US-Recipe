@@ -9,7 +9,7 @@ Original file is located at
 import json
 import numpy
 import pandas
-File = open('/content/Json file/US_recipes_null.Pdf.json')
+File = open('US_recipes_null.Pdf.json')
 
 recipes = json.load(File)
 df = pandas.DataFrame(recipes)
